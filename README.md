@@ -1,16 +1,53 @@
-# React + Vite
+# 🎮 Memory Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современная, адаптивная игра на запоминание карточек, созданная с помощью **React** и **Vite**.  
+Проверь свою память, находя одинаковые пары emoji-карт!
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 https://bolotbekov-hash.github.io/memory-card/
 
-## React Compiler
+## 🌟 Возможности
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Интерактивный геймплей** — переворачивай карточки и находи пары
+- **Подсчёт очков** — отслеживание найденных пар
+- **Счётчик ходов** — показывает количество сделанных ходов
+- **Адаптивный дизайн** — отлично работает на ПК, планшетах и телефонах
+- **Плавные анимации** — красивые эффекты переворота карточек
+- **Определение победы** — сообщение о победе при завершении игры
+- **Сброс игры** — возможность начать заново в любой момент
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Как играть
+
+1. Нажми на любую карточку, чтобы перевернуть её
+2. Нажми на вторую карточку, чтобы попытаться найти пару
+3. Если карточки совпали — они остаются открытыми
+4. Если нет — перевернутся обратно через короткую паузу
+5. Найди все пары, чтобы выиграть
+6. Постарайся пройти игру за минимальное количество ходов
+
+---
+## 🏗️С труктура проекта
+
+memory-card/
+├── public/
+│   ├── vite.svg
+│ 
+├── src/
+│   ├── components/
+│   │   ├── Card.jsx         # Компонент карточки
+│   │   ├── GameHeader.jsx   # Хедер со статистикой и кнопкой сброса
+│   │   └── WinMessage.jsx   # Сообщение о победе
+│   ├── hooks/
+│   │   └── useGameLogic.js  # Кастомный хук с логикой игры
+│   ├── App.jsx              # Главный компонент приложения
+│   ├── index.css            # Глобальные стили
+│   └── main.jsx             # Точка входа
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+
+
