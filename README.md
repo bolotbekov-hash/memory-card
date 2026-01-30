@@ -50,4 +50,5 @@ memory-card/
 ├── vite.config.js
 └── README.md
 
-
+Автор 
+Alibek Bolotbekov
